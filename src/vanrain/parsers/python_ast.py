@@ -153,6 +153,8 @@ def _annotation_type(node: ast.AST | None) -> _Type | None:
         base, last = ".".join(parts), parts[-1]
         sl = node.slice
         args = list(sl.elts) if isinstance(sl, ast.Tuple) else [sl]
+        if not args:  # e.g. ``tuple[()]``
+            return _Type(base)
         if last in _WRAPPERS:
             return _annotation_type(args[0])
         if last == "Union":

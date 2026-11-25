@@ -360,3 +360,19 @@ def test_reference_lines():
     r = parse("import x\n\ndef f():\n    x.y()\n")
     (call,) = [ref for ref in r.references if ref.kind is EdgeKind.CALLS]
     assert call == Reference("pkg.mod.f", "x.y", EdgeKind.CALLS, 4)
+
+
+def test_empty_subscript_annotation_does_not_crash():
+    # ``Generator[()]`` and ``tuple[()]`` have a subscript with no elements.
+    result = parse(
+        """
+        from typing import Generator, Optional
+
+        def gen(x: Optional[()]) -> Generator[()]:
+            pass
+
+        def pair(x: tuple[()]) -> None:
+            pass
+        """
+    )
+    assert "pkg.mod.gen" in by_id(result)
