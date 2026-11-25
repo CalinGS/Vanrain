@@ -1,0 +1,4270 @@
+[
+ {
+  "sha": "336204f012",
+  "target": "httpx._transports.default.AsyncHTTPTransport.__init__",
+  "needed": [
+   "scheme",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 823,
+  "file_tokens": 3495,
+  "needed_dist": {
+   "url": 2,
+   "scheme": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 823,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 823,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 823,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 823,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 993,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 7
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 30
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 4,
+   "n_sig": 8
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 30
+  }
+ },
+ {
+  "sha": "9fd6f0ca66",
+  "target": "httpx._content.encode_json",
+  "needed": [
+   "json"
+  ],
+  "new": [],
+  "target_tokens": 75,
+  "file_tokens": 2021,
+  "needed_dist": {
+   "json": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 495,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 2,
+   "n_sig": 2
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 3,
+   "n_sig": 20
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 72
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 57
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 72
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3992,
+   "n_full": 24,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 122
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 114
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 122
+  }
+ },
+ {
+  "sha": "3f76571d34",
+  "target": "httpx._models.Request.__init__",
+  "needed": [
+   "URL",
+   "params",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 621,
+  "file_tokens": 10593,
+  "needed_dist": {
+   "params": 2,
+   "URL": 1,
+   "url": 2
+  },
+  "file_recall": 0.3333333333333333,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 621,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 621,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 621,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 621,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 10,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 48
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 12,
+   "n_sig": 5
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 48
+  }
+ },
+ {
+  "sha": "7c0cda153d",
+  "target": "httpx._urlparse.urlparse",
+  "needed": [
+   "InvalidURL",
+   "URL",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 1437,
+  "file_tokens": 4367,
+  "needed_dist": {
+   "InvalidURL": 1,
+   "URL": 2,
+   "url": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1437,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "full_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 9,
+   "n_sig": 2
+  },
+  "mixed2@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 44
+  }
+ },
+ {
+  "sha": "37593c1952",
+  "target": "httpx._urlparse.normalize_path",
+  "needed": [
+   "path"
+  ],
+  "new": [],
+  "target_tokens": 143,
+  "file_tokens": 4285,
+  "needed_dist": {
+   "path": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 492,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 79
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 23
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 79
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3993,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 154
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 1,
+   "n_sig": 96
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 154
+  }
+ },
+ {
+  "sha": "4f6edf36e9",
+  "target": "httpx._models.Response.links",
+  "needed": [
+   "get",
+   "parse_header_links",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 113,
+  "file_tokens": 10743,
+  "needed_dist": {
+   "parse_header_links": 1,
+   "get": 1,
+   "url": 2
+  },
+  "file_recall": 0.6666666666666666,
+  "full_only@500": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "mixed@500": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "full_only@1000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed@1000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 7
+  },
+  "mixed2@1000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "full_only@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1990,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 13
+  },
+  "mixed2@2000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "mixed@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 2,
+   "n_sig": 37
+  },
+  "mixed2@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 44
+  }
+ },
+ {
+  "sha": "99cba6ac64",
+  "target": "httpx._auth.DigestAuth._build_auth_header",
+  "needed": [
+   "digest",
+   "join"
+  ],
+  "new": [],
+  "target_tokens": 419,
+  "file_tokens": 3007,
+  "needed_dist": {
+   "digest": 1,
+   "join": 4
+  },
+  "file_recall": 0.5,
+  "full_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 3
+  },
+  "mixed2@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 990,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 5,
+   "n_sig": 9
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1991,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 4,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3996,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 76
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 7,
+   "n_sig": 8
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 76
+  }
+ },
+ {
+  "sha": "3b9060ee11",
+  "target": "httpx._utils.get_environment_proxies",
+  "needed": [
+   "is_ipv4_hostname"
+  ],
+  "new": [],
+  "target_tokens": 525,
+  "file_tokens": 3527,
+  "needed_dist": {
+   "is_ipv4_hostname": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 525,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 525,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 525,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 525,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 3,
+   "n_sig": 11
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 55
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 21,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 71
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 3,
+   "n_sig": 67
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 71
+  }
+ },
+ {
+  "sha": "90538a3b46",
+  "target": "httpx._transports.asgi.ASGITransport.handle_async_request",
+  "needed": [
+   "raw_path",
+   "request",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 750,
+  "file_tokens": 1367,
+  "needed_dist": {
+   "request": 2,
+   "raw_path": 4,
+   "url": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 750,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 750,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 750,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 750,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 992,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 4
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 2,
+   "n_sig": 8
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 42
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 7,
+   "n_sig": 5
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 42
+  }
+ },
+ {
+  "sha": "59df8190a4",
+  "target": "httpx._models.Response.encoding#2",
+  "needed": [
+   "content",
+   "encoding",
+   "text"
+  ],
+  "new": [
+   "content",
+   "text"
+  ],
+  "target_tokens": 24,
+  "file_tokens": 10697,
+  "needed_dist": {
+   "text": 2,
+   "content": 2,
+   "encoding": 2
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 996,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 24
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 24
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 24
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 17,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 44
+  }
+ },
+ {
+  "sha": "9415af643f",
+  "target": "httpx._models.Response.raise_for_status",
+  "needed": [
+   "Response"
+  ],
+  "new": [
+   "Response"
+  ],
+  "target_tokens": 358,
+  "file_tokens": 10690,
+  "needed_dist": {
+   "Response": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 494,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 3
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 993,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 999,
+   "n_full": 3,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1997,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 10
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 40
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 34
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 40
+  }
+ },
+ {
+  "sha": "ee432c0d30",
+  "target": "httpx._urlparse.urlparse",
+  "needed": [
+   "fragment",
+   "path",
+   "query",
+   "quote"
+  ],
+  "new": [],
+  "target_tokens": 1327,
+  "file_tokens": 4077,
+  "needed_dist": {
+   "path": 3,
+   "fragment": 3,
+   "quote": 1,
+   "query": 3
+  },
+  "file_recall": 0.25,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1327,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@2000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 6
+  },
+  "mixed2@2000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@4000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed@4000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 9,
+   "n_sig": 16
+  },
+  "mixed2@4000": {
+   "recall": 0.25,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 57
+  }
+ },
+ {
+  "sha": "472597fb6b",
+  "target": "httpx._multipart.FileField.__init__",
+  "needed": [
+   "text"
+  ],
+  "new": [],
+  "target_tokens": 510,
+  "file_tokens": 2244,
+  "needed_dist": {
+   "text": 5
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 510,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 510,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 510,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 510,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 24
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 24
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3994,
+   "n_full": 18,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 109
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 2,
+   "n_sig": 70
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 109
+  }
+ },
+ {
+  "sha": "4b5a92e88e",
+  "target": "httpx._client.AsyncClient._send_single_request",
+  "needed": [
+   "Request",
+   "http_version",
+   "info",
+   "reason_phrase",
+   "request",
+   "url"
+  ],
+  "new": [
+   "info"
+  ],
+  "target_tokens": 292,
+  "file_tokens": 17034,
+  "needed_dist": {
+   "Request": 1,
+   "reason_phrase": 2,
+   "info": 4,
+   "http_version": 2,
+   "request": 2,
+   "url": 2
+  },
+  "file_recall": 0.16666666666666666,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 496,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "mixed@500": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 994,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "mixed@1000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 5,
+   "n_sig": 6
+  },
+  "mixed2@1000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "full_only@2000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 1996,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "mixed@2000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 7,
+   "n_sig": 14
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "full_only@4000": {
+   "recall": 0.16666666666666666,
+   "new_recall": 0.0,
+   "used": 3994,
+   "n_full": 15,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 48
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 8,
+   "n_sig": 12
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 48
+  }
+ },
+ {
+  "sha": "e486fbceea",
+  "target": "httpx._client.AsyncClient.get",
+  "needed": [
+   "UseClientDefault",
+   "auth"
+  ],
+  "new": [],
+  "target_tokens": 240,
+  "file_tokens": 17034,
+  "needed_dist": {
+   "UseClientDefault": 1,
+   "auth": 3
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 1,
+   "n_sig": 3
+  },
+  "mixed2@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "full_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 7
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 12
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 2,
+   "n_sig": 44
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 49
+  }
+ },
+ {
+  "sha": "0fc9009b90",
+  "target": "httpx._client.AsyncClient.get",
+  "needed": [
+   "UseClientDefault",
+   "auth"
+  ],
+  "new": [],
+  "target_tokens": 242,
+  "file_tokens": 17035,
+  "needed_dist": {
+   "UseClientDefault": 1,
+   "auth": 3
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 3
+  },
+  "mixed2@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "full_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 2,
+   "n_sig": 6
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 2,
+   "n_sig": 11
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 2,
+   "n_sig": 44
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 49
+  }
+ },
+ {
+  "sha": "a8dd079be7",
+  "target": "httpx._content.encode_content",
+  "needed": [
+   "content"
+  ],
+  "new": [],
+  "target_tokens": 254,
+  "file_tokens": 1959,
+  "needed_dist": {
+   "content": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 2
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 995,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 31
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 4,
+   "n_sig": 3
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 31
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 8,
+   "n_sig": 17
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 32,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 106
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 8,
+   "n_sig": 57
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 106
+  }
+ },
+ {
+  "sha": "e9b0c85dd4",
+  "target": "httpx._urls.URL.copy_with",
+  "needed": [
+   "URL",
+   "is_absolute_url"
+  ],
+  "new": [
+   "is_absolute_url"
+  ],
+  "target_tokens": 1351,
+  "file_tokens": 6904,
+  "needed_dist": {
+   "is_absolute_url": 2,
+   "URL": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1351,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 29
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 7,
+   "n_sig": 4
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 29
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 90
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 6,
+   "n_sig": 3
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 90
+  }
+ },
+ {
+  "sha": "c82885ac04",
+  "target": "httpx._main.print_help",
+  "needed": [
+   "URL"
+  ],
+  "new": [],
+  "target_tokens": 697,
+  "file_tokens": 3876,
+  "needed_dist": {
+   "URL": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 697,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 697,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 697,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 697,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 1,
+   "n_sig": 13
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1994,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 24
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 15,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 1,
+   "n_sig": 51
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 53
+  }
+ },
+ {
+  "sha": "4c307488cd",
+  "target": "httpx._main.print_response",
+  "needed": [
+   "content"
+  ],
+  "new": [
+   "content"
+  ],
+  "target_tokens": 160,
+  "file_tokens": 3877,
+  "needed_dist": {
+   "content": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 490,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 14
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 3,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 14
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1995,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 27
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1998,
+   "n_full": 4,
+   "n_sig": 7
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 27
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3991,
+   "n_full": 15,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 51
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 4,
+   "n_sig": 28
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 51
+  }
+ },
+ {
+  "sha": "a416106250",
+  "target": "httpx._utils.URLPattern.__init__",
+  "needed": [
+   "host",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 342,
+  "file_tokens": 4231,
+  "needed_dist": {
+   "host": 1,
+   "url": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 3,
+   "n_sig": 3
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 54
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 4,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 54
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3992,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 101
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 4,
+   "n_sig": 60
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 101
+  }
+ },
+ {
+  "sha": "4f8068a7ad",
+  "target": "httpx._transports.base.BaseTransport.handle_request",
+  "needed": [
+   "Request",
+   "Response",
+   "headers",
+   "read",
+   "stream",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 873,
+  "file_tokens": 1147,
+  "needed_dist": {
+   "read": 2,
+   "Request": 1,
+   "headers": 4,
+   "Response": 1,
+   "stream": 2,
+   "url": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 873,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 873,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 873,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 873,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 1,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 0.16666666666666666,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 43
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 2,
+   "n_sig": 10
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 43
+  }
+ },
+ {
+  "sha": "321d4aa509",
+  "target": "httpx._models.Headers.update",
+  "needed": [
+   "headers",
+   "keys"
+  ],
+  "new": [
+   "keys"
+  ],
+  "target_tokens": 57,
+  "file_tokens": 17215,
+  "needed_dist": {
+   "keys": 2,
+   "headers": 2
+  },
+  "file_recall": 0.5,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 496,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 19
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 19
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 4,
+   "n_sig": 19
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 43
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 2000,
+   "n_full": 4,
+   "n_sig": 39
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 43
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 18,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 106
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 5,
+   "n_sig": 34
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 106
+  }
+ },
+ {
+  "sha": "406700317b",
+  "target": "httpx._transports.default.HTTPTransport.__init__",
+  "needed": [
+   "URL",
+   "headers",
+   "host",
+   "port",
+   "raw",
+   "raw_host",
+   "raw_path",
+   "raw_scheme",
+   "scheme",
+   "url"
+  ],
+  "new": [],
+  "target_tokens": 381,
+  "file_tokens": 2432,
+  "needed_dist": {
+   "port": 4,
+   "scheme": 3,
+   "raw_path": 4,
+   "URL": 3,
+   "headers": 4,
+   "raw_scheme": 4,
+   "raw_host": 4,
+   "raw": 4,
+   "host": 4,
+   "url": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 1
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 33
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 4,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 33
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 86
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 4,
+   "n_sig": 36
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 86
+  }
+ },
+ {
+  "sha": "4882e98049",
+  "target": "httpx._models.Response.url",
+  "needed": [
+   "URL"
+  ],
+  "new": [],
+  "target_tokens": 42,
+  "file_tokens": 17218,
+  "needed_dist": {
+   "URL": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 491,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1991,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 18,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 55
+  }
+ },
+ {
+  "sha": "47d712c01c",
+  "target": "httpx._models.Cookies.extract_cookies",
+  "needed": [
+   "_CookieCompatResponse"
+  ],
+  "new": [],
+  "target_tokens": 92,
+  "file_tokens": 16402,
+  "needed_dist": {
+   "_CookieCompatResponse": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 5
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "full_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 992,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 4,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1990,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 29
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 29
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 15,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 58
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 5,
+   "n_sig": 24
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 58
+  }
+ },
+ {
+  "sha": "81f385c484",
+  "target": "httpx._api.stream",
+  "needed": [
+   "cookies",
+   "timeout",
+   "trust_env"
+  ],
+  "new": [],
+  "target_tokens": 324,
+  "file_tokens": 2904,
+  "needed_dist": {
+   "cookies": 2,
+   "timeout": 3,
+   "trust_env": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 995,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 1,
+   "n_sig": 24
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3990,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 60
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 1,
+   "n_sig": 56
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 60
+  }
+ },
+ {
+  "sha": "52dd95fb5c",
+  "target": "httpx._transports.default.AsyncHTTPTransport.handle_async_request",
+  "needed": [
+   "headers"
+  ],
+  "new": [],
+  "target_tokens": 304,
+  "file_tokens": 2441,
+  "needed_dist": {
+   "headers": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 2,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 993,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 4,
+   "n_sig": 13
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 33
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 5,
+   "n_sig": 16
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 33
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 20,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 111
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 5,
+   "n_sig": 65
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 111
+  }
+ },
+ {
+  "sha": "0f280af8b1",
+  "target": "httpx._client.AsyncClient._send_single_request.on_close",
+  "needed": [
+   "aclose",
+   "map_exceptions",
+   "request",
+   "stream"
+  ],
+  "new": [
+   "map_exceptions",
+   "request"
+  ],
+  "target_tokens": 56,
+  "file_tokens": 14305,
+  "needed_dist": {
+   "request": 2,
+   "stream": 3,
+   "aclose": 2,
+   "map_exceptions": 2
+  },
+  "file_recall": 0.75,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 495,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 995,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 11
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.25,
+   "new_recall": 0.5,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@2000": {
+   "recall": 0.25,
+   "new_recall": 0.5,
+   "used": 1998,
+   "n_full": 2,
+   "n_sig": 23
+  },
+  "mixed2@2000": {
+   "recall": 0.25,
+   "new_recall": 0.5,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@4000": {
+   "recall": 0.25,
+   "new_recall": 0.5,
+   "used": 3997,
+   "n_full": 18,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 71
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": 1.0,
+   "used": 3998,
+   "n_full": 2,
+   "n_sig": 54
+  },
+  "mixed2@4000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 71
+  }
+ },
+ {
+  "sha": "02a692aba5",
+  "target": "httpx._transports.wsgi.WSGITransport.request",
+  "needed": [
+   "port",
+   "scheme"
+  ],
+  "new": [],
+  "target_tokens": 679,
+  "file_tokens": 1112,
+  "needed_dist": {
+   "port": 4,
+   "scheme": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 679,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 679,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 679,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 679,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 989,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 7
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 15,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 96
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 54
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 96
+  }
+ },
+ {
+  "sha": "ca5f524943",
+  "target": "httpx._transports.asgi.ASGITransport.arequest",
+  "needed": [
+   "path",
+   "raw_path"
+  ],
+  "new": [
+   "raw_path"
+  ],
+  "target_tokens": 783,
+  "file_tokens": 1259,
+  "needed_dist": {
+   "path": 4,
+   "raw_path": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 783,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 783,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 783,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 783,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 993,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1996,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 2,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3994,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3996,
+   "n_full": 0,
+   "n_sig": 93
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3999,
+   "n_full": 4,
+   "n_sig": 36
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3996,
+   "n_full": 0,
+   "n_sig": 93
+  }
+ },
+ {
+  "sha": "0123bca335",
+  "target": "httpx._transports.asgi.ASGITransport.arequest",
+  "needed": [
+   "headers"
+  ],
+  "new": [],
+  "target_tokens": 775,
+  "file_tokens": 1252,
+  "needed_dist": {
+   "headers": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 775,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 775,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 775,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 775,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 2
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 2,
+   "n_sig": 4
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 94
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 4,
+   "n_sig": 35
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 94
+  }
+ },
+ {
+  "sha": "815ef94ed9",
+  "target": "httpx._models.Headers.__eq__",
+  "needed": [
+   "Headers"
+  ],
+  "new": [],
+  "target_tokens": 44,
+  "file_tokens": 12706,
+  "needed_dist": {
+   "Headers": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 490,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 32
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 32
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 32
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 1,
+   "n_sig": 4
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3992,
+   "n_full": 20,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 112
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 1,
+   "n_sig": 46
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 112
+  }
+ }
+]

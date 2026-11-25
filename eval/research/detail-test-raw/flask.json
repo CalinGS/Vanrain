@@ -1,0 +1,4204 @@
+[
+ {
+  "sha": "de8429ffda",
+  "target": "flask.testing.FlaskClient.session_transaction",
+  "needed": [
+   "request"
+  ],
+  "new": [],
+  "target_tokens": 422,
+  "file_tokens": 2528,
+  "needed_dist": {
+   "request": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 1,
+   "n_sig": 10
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1994,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 46
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 2,
+   "n_sig": 28
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 46
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 116
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 43
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 116
+  }
+ },
+ {
+  "sha": "81798b406f",
+  "target": "flask.app.Flask.make_response",
+  "needed": [
+   "response"
+  ],
+  "new": [],
+  "target_tokens": 1471,
+  "file_tokens": 15429,
+  "needed_dist": {
+   "response": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1471,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1994,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 6
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 68
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 2,
+   "n_sig": 48
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 68
+  }
+ },
+ {
+  "sha": "7b0088693e",
+  "target": "flask.app.Flask.process_response",
+  "needed": [
+   "_get_session",
+   "is_null_session",
+   "response",
+   "save_session"
+  ],
+  "new": [
+   "_get_session"
+  ],
+  "target_tokens": 290,
+  "file_tokens": 16196,
+  "needed_dist": {
+   "is_null_session": 1,
+   "response": 4,
+   "_get_session": 2,
+   "save_session": 1
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.25,
+   "new_recall": 0.0,
+   "used": 496,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@1000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 997,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 3,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 50
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 6,
+   "n_sig": 4
+  },
+  "mixed2@2000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 50
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 3998,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 113
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 6,
+   "n_sig": 2
+  },
+  "mixed2@4000": {
+   "recall": 0.75,
+   "new_recall": 1.0,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 113
+  }
+ },
+ {
+  "sha": "da6d075dfd",
+  "target": "flask.sessions.SessionMixin.permanent",
+  "needed": [
+   "get"
+  ],
+  "new": [],
+  "target_tokens": 40,
+  "file_tokens": 3870,
+  "needed_dist": {
+   "get": 3
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 494,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 3
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 27
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 3,
+   "n_sig": 12
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 27
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 38
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 125
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 3,
+   "n_sig": 109
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 125
+  }
+ },
+ {
+  "sha": "fb54159861",
+  "target": "flask.sessions.SecureCookieSessionInterface.get_signing_serializer",
+  "needed": [
+   "app"
+  ],
+  "new": [],
+  "target_tokens": 150,
+  "file_tokens": 3857,
+  "needed_dist": {
+   "app": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 8
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 2,
+   "n_sig": 7
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 23
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1989,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 9
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 117
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 3,
+   "n_sig": 65
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 117
+  }
+ },
+ {
+  "sha": "b394a994e6",
+  "target": "flask.__getattr__",
+  "needed": [
+   "Flask"
+  ],
+  "new": [],
+  "target_tokens": 124,
+  "file_tokens": 656,
+  "needed_dist": {
+   "Flask": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 492,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 49
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 106
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 106
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 106
+  }
+ },
+ {
+  "sha": "dffe303482",
+  "target": "flask.helpers.stream_with_context#3",
+  "needed": [
+   "decorator"
+  ],
+  "new": [],
+  "target_tokens": 752,
+  "file_tokens": 5862,
+  "needed_dist": {
+   "decorator": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 752,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 752,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 752,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 752,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 994,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 8
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1995,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 28
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 34
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 18,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 93
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 2,
+   "n_sig": 84
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 93
+  }
+ },
+ {
+  "sha": "860a25c390",
+  "target": "flask.helpers.stream_with_context",
+  "needed": [
+   "decorator"
+  ],
+  "new": [],
+  "target_tokens": 734,
+  "file_tokens": 5771,
+  "needed_dist": {
+   "decorator": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 734,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 734,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 734,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 734,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 0,
+   "n_sig": 39
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 24
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 0,
+   "n_sig": 39
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3994,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 89
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 3,
+   "n_sig": 76
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 89
+  }
+ },
+ {
+  "sha": "eb1182a10e",
+  "target": "flask.sessions.SecureCookieSessionInterface.save_session",
+  "needed": [
+   "app",
+   "dumps",
+   "get_signing_serializer"
+  ],
+  "new": [],
+  "target_tokens": 388,
+  "file_tokens": 3701,
+  "needed_dist": {
+   "dumps": 3,
+   "app": 4,
+   "get_signing_serializer": 1
+  },
+  "file_recall": 0.3333333333333333,
+  "full_only@500": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 991,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "mixed@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 3,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 17
+  },
+  "full_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 4,
+   "n_sig": 4
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 44
+  },
+  "full_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3994,
+   "n_full": 17,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 109
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 12,
+   "n_sig": 34
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 109
+  }
+ },
+ {
+  "sha": "8705dd39c4",
+  "target": "flask.sessions.SecureCookieSessionInterface.save_session",
+  "needed": [
+   "response"
+  ],
+  "new": [],
+  "target_tokens": 368,
+  "file_tokens": 3522,
+  "needed_dist": {
+   "response": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 5
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 19
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 4
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 19
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 5,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3993,
+   "n_full": 24,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3996,
+   "n_full": 0,
+   "n_sig": 107
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 12,
+   "n_sig": 38
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3996,
+   "n_full": 0,
+   "n_sig": 107
+  }
+ },
+ {
+  "sha": "0ec9192cf2",
+  "target": "flask.__getattr__",
+  "needed": [
+   "name"
+  ],
+  "new": [],
+  "target_tokens": 411,
+  "file_tokens": 933,
+  "needed_dist": {
+   "name": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 993,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 41
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 41
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 41
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 94
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 94
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 94
+  }
+ },
+ {
+  "sha": "b8b410014d",
+  "target": "flask.blueprints.Blueprint.__init__",
+  "needed": [
+   "name"
+  ],
+  "new": [],
+  "target_tokens": 308,
+  "file_tokens": 6089,
+  "needed_dist": {
+   "name": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 2,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 14
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 14
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 14
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 0,
+   "n_sig": 51
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 1,
+   "n_sig": 2
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 0,
+   "n_sig": 51
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 105
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 1,
+   "n_sig": 63
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 105
+  }
+ },
+ {
+  "sha": "b10b6d4af1",
+  "target": "flask.config.Config.from_file",
+  "needed": [
+   "app",
+   "load"
+  ],
+  "new": [],
+  "target_tokens": 368,
+  "file_tokens": 3146,
+  "needed_dist": {
+   "load": 4,
+   "app": 5
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 4
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 994,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 1,
+   "n_sig": 14
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 42
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 104
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 2,
+   "n_sig": 15
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 104
+  }
+ },
+ {
+  "sha": "fc03d0dfab",
+  "target": "flask.blueprints.Blueprint._check_setup_finished",
+  "needed": [
+   "blueprint",
+   "name"
+  ],
+  "new": [],
+  "target_tokens": 181,
+  "file_tokens": 6137,
+  "needed_dist": {
+   "blueprint": 4,
+   "name": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 496,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1993,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 107
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 107
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 107
+  }
+ },
+ {
+  "sha": "a748770199",
+  "target": "flask.views.View.as_view",
+  "needed": [
+   "__init__",
+   "name",
+   "view"
+  ],
+  "new": [],
+  "target_tokens": 527,
+  "file_tokens": 1684,
+  "needed_dist": {
+   "view": 1,
+   "name": 6,
+   "__init__": 6
+  },
+  "file_recall": 0.3333333333333333,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 527,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 527,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 527,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 527,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 2,
+   "n_sig": 17
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 9
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "full_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 114
+  },
+  "mixed@4000": {
+   "recall": 0.6666666666666666,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 72
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 114
+  }
+ },
+ {
+  "sha": "cabda59353",
+  "target": "flask.blueprints.Blueprint.register",
+  "needed": [
+   "blueprints"
+  ],
+  "new": [],
+  "target_tokens": 1354,
+  "file_tokens": 6806,
+  "needed_dist": {
+   "blueprints": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1354,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 5,
+   "n_sig": 6
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 17,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 80
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 6,
+   "n_sig": 54
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 80
+  }
+ },
+ {
+  "sha": "d7b6c1f670",
+  "target": "flask.blueprints.Blueprint.register",
+  "needed": [
+   "blueprint",
+   "get"
+  ],
+  "new": [],
+  "target_tokens": 1262,
+  "file_tokens": 6713,
+  "needed_dist": {
+   "blueprint": 3,
+   "get": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1262,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 5,
+   "n_sig": 8
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3994,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 80
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 6,
+   "n_sig": 57
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 80
+  }
+ },
+ {
+  "sha": "4bc0e4943d",
+  "target": "flask.cli.run_command",
+  "needed": [
+   "debug",
+   "default",
+   "get_debug_flag"
+  ],
+  "new": [],
+  "target_tokens": 730,
+  "file_tokens": 8371,
+  "needed_dist": {
+   "default": 5,
+   "debug": 3,
+   "get_debug_flag": 1
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 730,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 730,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 730,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 730,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 992,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 6
+  },
+  "mixed2@1000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 9
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1990,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 46
+  },
+  "mixed@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 6,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 46
+  },
+  "full_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 16,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 108
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 7,
+   "n_sig": 68
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 108
+  }
+ },
+ {
+  "sha": "79032ca5f1",
+  "target": "flask.app.Flask.select_jinja_autoescape",
+  "needed": [
+   "default"
+  ],
+  "new": [
+   "default"
+  ],
+  "target_tokens": 93,
+  "file_tokens": 24748,
+  "needed_dist": {
+   "default": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 498,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 2
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 998,
+   "n_full": 1,
+   "n_sig": 14
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1993,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 45
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3995,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 117
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 1,
+   "n_sig": 108
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 117
+  }
+ },
+ {
+  "sha": "cc66213e57",
+  "target": "flask.app.Flask.select_jinja_autoescape",
+  "needed": [
+   "default"
+  ],
+  "new": [
+   "default"
+  ],
+  "target_tokens": 93,
+  "file_tokens": 24757,
+  "needed_dist": {
+   "default": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 498,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 2
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 11
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 1,
+   "n_sig": 13
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1993,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 1,
+   "n_sig": 45
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 55
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3998,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 118
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 4000,
+   "n_full": 1,
+   "n_sig": 109
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3997,
+   "n_full": 0,
+   "n_sig": 118
+  }
+ },
+ {
+  "sha": "0d8c8ba71b",
+  "target": "flask.app.Flask.test_request_context",
+  "needed": [
+   "app"
+  ],
+  "new": [],
+  "target_tokens": 577,
+  "file_tokens": 24756,
+  "needed_dist": {
+   "app": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 577,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 577,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 577,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 577,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 9
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1996,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 41
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 2,
+   "n_sig": 16
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 41
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 10,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 105
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 4,
+   "n_sig": 11
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 105
+  }
+ },
+ {
+  "sha": "00b07c863e",
+  "target": "flask.globals.__getattr__",
+  "needed": [
+   "Flask"
+  ],
+  "new": [],
+  "target_tokens": 151,
+  "file_tokens": 796,
+  "needed_dist": {
+   "Flask": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 25
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1993,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 57
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 12,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 129
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 129
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 129
+  }
+ },
+ {
+  "sha": "a6a7a57380",
+  "target": "flask.app.Flask.make_config",
+  "needed": [
+   "get"
+  ],
+  "new": [],
+  "target_tokens": 191,
+  "file_tokens": 24756,
+  "needed_dist": {
+   "get": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 1,
+   "n_sig": 7
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 8
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 996,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 20
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 14,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 1,
+   "n_sig": 50
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 114
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 2,
+   "n_sig": 19
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 114
+  }
+ },
+ {
+  "sha": "f8cb0b0dd5",
+  "target": "flask.app.Flask.make_response",
+  "needed": [
+   "Response"
+  ],
+  "new": [],
+  "target_tokens": 1423,
+  "file_tokens": 22779,
+  "needed_dist": {
+   "Response": 1
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1423,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 1,
+   "n_sig": 6
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 11,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 70
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 39
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 70
+  }
+ },
+ {
+  "sha": "5050a18a00",
+  "target": "flask.cli.run_command",
+  "needed": [
+   "CertParamType"
+  ],
+  "new": [],
+  "target_tokens": 684,
+  "file_tokens": 7789,
+  "needed_dist": {
+   "CertParamType": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 684,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 684,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 684,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 684,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 50
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 5,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 50
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 118
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 8,
+   "n_sig": 56
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 0,
+   "n_sig": 118
+  }
+ },
+ {
+  "sha": "eede1a3685",
+  "target": "flask.json.loads",
+  "needed": [
+   "Flask"
+  ],
+  "new": [],
+  "target_tokens": 205,
+  "file_tokens": 2590,
+  "needed_dist": {
+   "Flask": 1
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 2,
+   "n_sig": 4
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 0,
+   "n_sig": 7
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 993,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 16
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 0,
+   "n_sig": 22
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 51
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 2,
+   "n_sig": 45
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 51
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 19,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 120
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 2,
+   "n_sig": 113
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 120
+  }
+ },
+ {
+  "sha": "b707bf443a",
+  "target": "flask.sessions.SecureCookieSessionInterface.save_session",
+  "needed": [
+   "get_cookie_httponly",
+   "name"
+  ],
+  "new": [],
+  "target_tokens": 339,
+  "file_tokens": 3928,
+  "needed_dist": {
+   "name": 2,
+   "get_cookie_httponly": 1
+  },
+  "file_recall": 0.5,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 497,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 6
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 2,
+   "n_sig": 5
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 20
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1993,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 6,
+   "n_sig": 3
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 47
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 21,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 108
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 12,
+   "n_sig": 28
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 108
+  }
+ },
+ {
+  "sha": "beae1249f7",
+  "target": "flask.cli.run_command",
+  "needed": [
+   "SeparatedPathType",
+   "default"
+  ],
+  "new": [],
+  "target_tokens": 592,
+  "file_tokens": 7632,
+  "needed_dist": {
+   "default": 4,
+   "SeparatedPathType": 1
+  },
+  "file_recall": 0.5,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 592,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 592,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 592,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 592,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 997,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 1,
+   "n_sig": 4
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 15
+  },
+  "full_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 5,
+   "n_sig": 5
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 0,
+   "n_sig": 53
+  },
+  "full_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3995,
+   "n_full": 13,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 121
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3999,
+   "n_full": 8,
+   "n_sig": 61
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 121
+  }
+ },
+ {
+  "sha": "633449a36c",
+  "target": "flask.ctx.after_this_request",
+  "needed": [
+   "decorator",
+   "view"
+  ],
+  "new": [],
+  "target_tokens": 213,
+  "file_tokens": 4357,
+  "needed_dist": {
+   "view": 99,
+   "decorator": 3
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 12
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 21
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1992,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 48
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 48
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 48
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3994,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 100
+  },
+  "mixed@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 100
+  },
+  "mixed2@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 100
+  }
+ },
+ {
+  "sha": "47e4bd5059",
+  "target": "flask.ctx.copy_current_request_context.wrapper",
+  "needed": [
+   "ensure_sync"
+  ],
+  "new": [
+   "ensure_sync"
+  ],
+  "target_tokens": 23,
+  "file_tokens": 4357,
+  "needed_dist": {
+   "ensure_sync": 4
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 500,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 6
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 498,
+   "n_full": 0,
+   "n_sig": 16
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 16
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 26
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 2000,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 1997,
+   "n_full": 1,
+   "n_sig": 43
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 52
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": 0.0,
+   "used": 3996,
+   "n_full": 6,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 103
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 3999,
+   "n_full": 1,
+   "n_sig": 96
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": 1.0,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 103
+  }
+ },
+ {
+  "sha": "e679a85b80",
+  "target": "flask.cli.locate_app",
+  "needed": [
+   "NoAppException"
+  ],
+  "new": [],
+  "target_tokens": 212,
+  "file_tokens": 8059,
+  "needed_dist": {
+   "NoAppException": 1
+  },
+  "file_recall": 1.0,
+  "full_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 492,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 0,
+   "n_sig": 13
+  },
+  "mixed@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 12
+  },
+  "mixed2@500": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 499,
+   "n_full": 1,
+   "n_sig": 12
+  },
+  "full_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 998,
+   "n_full": 5,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 0,
+   "n_sig": 32
+  },
+  "mixed@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 2,
+   "n_sig": 18
+  },
+  "mixed2@1000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 1,
+   "n_sig": 31
+  },
+  "full_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 7,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 0,
+   "n_sig": 58
+  },
+  "mixed@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 4,
+   "n_sig": 14
+  },
+  "mixed2@2000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 1998,
+   "n_full": 1,
+   "n_sig": 57
+  },
+  "full_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3990,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 127
+  },
+  "mixed@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 4,
+   "n_sig": 72
+  },
+  "mixed2@4000": {
+   "recall": 1.0,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 1,
+   "n_sig": 126
+  }
+ },
+ {
+  "sha": "48f2afbf90",
+  "target": "flask.blueprints.Blueprint.register",
+  "needed": [
+   "blueprint",
+   "blueprints",
+   "name"
+  ],
+  "new": [],
+  "target_tokens": 1355,
+  "file_tokens": 5945,
+  "needed_dist": {
+   "blueprints": 3,
+   "blueprint": 3,
+   "name": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "mixed2@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1355,
+   "n_full": 0,
+   "n_sig": 0
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1993,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "mixed@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 5,
+   "n_sig": 6
+  },
+  "mixed2@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 2000,
+   "n_full": 0,
+   "n_sig": 18
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 9,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 75
+  },
+  "mixed@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 6,
+   "n_sig": 51
+  },
+  "mixed2@4000": {
+   "recall": 0.3333333333333333,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 0,
+   "n_sig": 75
+  }
+ },
+ {
+  "sha": "9f0da9b770",
+  "target": "flask.cli.call_factory",
+  "needed": [
+   "Flask",
+   "default"
+  ],
+  "new": [],
+  "target_tokens": 291,
+  "file_tokens": 7997,
+  "needed_dist": {
+   "default": 4,
+   "Flask": 2
+  },
+  "file_recall": 0.0,
+  "full_only@500": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 493,
+   "n_full": 3,
+   "n_sig": 0
+  },
+  "sig_only@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "mixed2@500": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 500,
+   "n_full": 0,
+   "n_sig": 10
+  },
+  "full_only@1000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1000,
+   "n_full": 4,
+   "n_sig": 0
+  },
+  "sig_only@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "mixed@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 1,
+   "n_sig": 12
+  },
+  "mixed2@1000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 999,
+   "n_full": 0,
+   "n_sig": 28
+  },
+  "full_only@2000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 1997,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 54
+  },
+  "mixed@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 3,
+   "n_sig": 10
+  },
+  "mixed2@2000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 1999,
+   "n_full": 0,
+   "n_sig": 54
+  },
+  "full_only@4000": {
+   "recall": 0.0,
+   "new_recall": null,
+   "used": 3993,
+   "n_full": 8,
+   "n_sig": 0
+  },
+  "sig_only@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 127
+  },
+  "mixed@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 4000,
+   "n_full": 3,
+   "n_sig": 69
+  },
+  "mixed2@4000": {
+   "recall": 0.5,
+   "new_recall": null,
+   "used": 3998,
+   "n_full": 0,
+   "n_sig": 127
+  }
+ }
+]

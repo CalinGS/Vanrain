@@ -1,0 +1,23 @@
+train ['click', 'flask']: 134 tasks; test ['httpx', 'requests', 'requests_old']: 190 tasks
+budget  set    BFS    learned
+  1000  train  0.325  0.367
+  1000  test   0.339  0.331
+  2000  train  0.464  0.533
+  2000  test   0.475  0.483
+  4000  train  0.612  0.635
+  4000  test   0.592  0.606
+learned costs (lower = followed first; 50 = ignored):
+  calls      out 2
+  calls      in  8
+  imports    out 2
+  imports    in  50
+  inherits   out 5
+  inherits   in  3
+  references out 3
+  references in  2
+  contains   out 2
+  contains   in  2
+
+real	4m23.978s
+user	4m20.662s
+sys	0m0.237s
