@@ -1,0 +1,55 @@
+# src	kind	dst	confidence	why
+# confidence: "exact" means the resolver must emit it with confidence 1.0;
+# "heuristic" means it must be emitted with confidence below 1.0.
+#
+# CONTAINS
+shop.checkout	contains	shop.checkout.checkout	exact	def at module level
+shop.checkout	contains	shop.checkout.is_order	exact	def at module level
+shop.checkout	contains	shop.checkout.outer	exact	def at module level
+shop.checkout.outer	contains	shop.checkout.outer.inner	exact	nested def
+shop.models	contains	shop.models.Item	exact	class at module level
+shop.models	contains	shop.models.Order	exact	class at module level
+shop.models	contains	shop.models.DiscountedOrder	exact	class at module level
+shop.models.Item	contains	shop.models.Item.__init__	exact	method
+shop.models.Item	contains	shop.models.Item.price	exact	method
+shop.models.Order	contains	shop.models.Order.__init__	exact	method
+shop.models.Order	contains	shop.models.Order.add	exact	method
+shop.models.Order	contains	shop.models.Order.total	exact	method
+shop.models.DiscountedOrder	contains	shop.models.DiscountedOrder.__init__	exact	method
+shop.models.DiscountedOrder	contains	shop.models.DiscountedOrder.total	exact	method override
+shop.pricing	contains	shop.pricing.apply_discount	exact	def at module level
+shop.pricing	contains	shop.pricing.with_tax	exact	def at module level
+shop.util	contains	shop.util.round_money	exact	def at module level
+shop.util	contains	shop.util._unused	exact	def at module level
+#
+# IMPORTS
+shop	imports	shop.models.Order	exact	relative import, re-exported by the package
+shop.models	imports	shop.pricing.apply_discount	exact	from-import of a function
+shop.checkout	imports	shop.models.Order	exact	"from shop import Order" follows the re-export
+shop.checkout	imports	shop.util	exact	"from shop import util" names a submodule
+shop.checkout	imports	shop.models.DiscountedOrder	exact	from-import of a class
+shop.checkout	imports	shop.models.Item	exact	from-import of a class
+shop.checkout	imports	shop.pricing.with_tax	exact	from-import of a function
+#
+# INHERITS
+shop.models.DiscountedOrder	inherits	shop.models.Order	exact	direct base class
+#
+# CALLS
+shop.models.Order.total	calls	shop.models.Item.price	heuristic	item comes from self.items, typed list[Item]
+shop.models.DiscountedOrder.__init__	calls	shop.models.Order.__init__	exact	super().__init__()
+shop.models.DiscountedOrder.total	calls	shop.models.Order.total	exact	super().total()
+shop.models.DiscountedOrder.total	calls	shop.pricing.apply_discount	exact	imported name
+shop.checkout.checkout	calls	shop.models.DiscountedOrder	exact	constructor call
+shop.checkout.checkout	calls	shop.models.Order.add	heuristic	order = DiscountedOrder(...); add is inherited
+shop.checkout.checkout	calls	shop.models.DiscountedOrder.total	heuristic	order = DiscountedOrder(...); total is overridden
+shop.checkout.checkout	calls	shop.pricing.with_tax	exact	imported name
+shop.checkout.checkout	calls	shop.util.round_money	exact	attribute of an imported module
+shop.checkout.outer	calls	shop.checkout.outer.inner	exact	local nested function
+shop.checkout.outer.inner	calls	shop.util.round_money	exact	module name from the enclosing module scope
+#
+# REFERENCES
+shop.models.Order.__init__	references	shop.models.Item	exact	annotation list[Item]
+shop.models.Order.add	references	shop.models.Item	exact	parameter annotation
+shop.checkout.checkout	references	shop.models.Item	exact	parameter annotation list[Item]
+shop.checkout.is_order	references	shop.models.Order	exact	isinstance check, via the re-export
+shop.checkout	references	shop.util.round_money	exact	function stored as a value in HANDLERS

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vanrain"
+version = "0.0.1"
+description = "Feed your coding agent the code that's connected, not whole files."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "The Vanrain authors" }]
+keywords = ["code-graph", "llm", "context", "coding-agents", "mcp"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+vanrain = "vanrain.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vanrain"]
+
+[tool.hatch.build.targets.sdist]
+# The benchmark never ships with the library (plan, section 6).
+exclude = ["eval/", ".github/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The fixture repo is data, not tests to collect.
+norecursedirs = ["tests/fixtures"]
