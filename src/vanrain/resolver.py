@@ -47,6 +47,27 @@ def _parent(sid: str) -> str:
     return sid.rpartition(".")[0]
 
 
+def _import_bases(results: Iterable[ParseResult]) -> dict[str, str]:
+    """Module id -> id of the nearest directory above it that is not a package.
+
+    That directory is where Python starts looking when the file is run as a
+    script or collected by pytest: ``tests.test_api`` -> ``tests``,
+    ``tests.fixtures.tiny_repo.shop.checkout`` -> ``tests.fixtures.tiny_repo``.
+    Modules whose top package sits at a source root get ``""``.
+    """
+    results = list(results)
+    packages = {
+        r.module for r in results if r.file.rsplit("/", 1)[-1].startswith("__init__.")
+    }
+    bases = {}
+    for r in results:
+        cur = r.module if r.module in packages else _parent(r.module)
+        while cur in packages:
+            cur = _parent(cur)
+        bases[r.module] = cur
+    return bases
+
+
 class Resolver:
     """Symbol table for a set of parsed files, and the lookups over it."""
 
@@ -65,6 +86,8 @@ class Resolver:
                 else:
                     self.bindings.setdefault((b.scope, b.name), b.target)
         self.bases: dict[str, list[str]] = {}
+        self.import_bases = _import_bases(self.results)
+        self.file_modules = {r.file: r.module for r in self.results}
 
     # -- edges ---------------------------------------------------------------
 
@@ -113,7 +136,7 @@ class Resolver:
         if ref.src not in self.symbols:
             return None
         if ref.kind is EdgeKind.IMPORTS:
-            dst = self.absolute(ref.name)
+            dst = self.absolute(ref.name, origin=ref.src)
             return (dst, 1.0) if dst else None
 
         head, *rest = ref.name.split(".")
@@ -171,9 +194,9 @@ class Resolver:
             return sid
         target = self.bindings.get((scope, name))
         if target is not None:
-            return self.absolute(target, depth + 1)
+            return self.absolute(target, depth + 1, origin=scope)
         for star in self.stars.get(scope, ()):
-            module = self.absolute(star, depth + 1)
+            module = self.absolute(star, depth + 1, origin=scope)
             if module and self.symbols[module].kind is NodeKind.MODULE:
                 found = self.in_scope(module, name, depth + 1)
                 if found:
@@ -190,8 +213,24 @@ class Resolver:
         sid = f"{target}.{name}"
         return sid if sid in self.symbols else None
 
-    def absolute(self, name: str, depth: int = 0) -> str | None:
-        """Resolve an absolute dotted name, following re-exports."""
+    def absolute(self, name: str, depth: int = 0, origin: str | None = None) -> str | None:
+        """Resolve an absolute dotted name, following re-exports.
+
+        ``origin`` is the symbol whose import this is. When the name does not
+        resolve from the repository root, it is tried again from the
+        origin's import base (see ``_import_bases``), the way Python finds
+        ``from test_fixture import ROOT`` in a ``tests/`` folder that is not
+        a package, or ``shop.models`` in a project nested in the repository.
+        """
+        found = self._absolute(name, depth)
+        if found is None and origin is not None and origin in self.symbols:
+            module = self.file_modules.get(self.symbols[origin].file)
+            base = self.import_bases.get(module, "")
+            if base:
+                found = self._absolute(f"{base}.{name}", depth)
+        return found
+
+    def _absolute(self, name: str, depth: int) -> str | None:
         if depth > _MAX_DEPTH:
             return None
         parts = name.split(".")
