@@ -21,8 +21,9 @@ from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from harness.issue_seeds import Mentions, extract, resolve_vanrain_seeds
+from harness.issue_seeds import Mentions, extract
 from harness.metrics import count_tokens
+from vanrain.text_seeds import seeds_from_text
 
 HEADING = "## Code that may be relevant (selected automatically)"
 
@@ -56,7 +57,7 @@ def _vanrain(strategy: str) -> Callable[[Path, str, int], Injected]:
         t0 = time.perf_counter()
         graph = api.open_repo(repo, cache=False).graph
         t1 = time.perf_counter()
-        seeds = resolve_vanrain_seeds(graph, extract(issue))
+        seeds = seeds_from_text(graph, repo, issue)
         if not seeds:
             return Injected(name, "", 0, (), t1 - t0, 0.0, ["no seed resolved"])
         ctx = api.get_context(repo, seeds, budget=budget, strategy=strategy, graph=graph)

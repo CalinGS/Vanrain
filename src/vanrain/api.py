@@ -28,6 +28,7 @@ from vanrain.model import EdgeKind, NodeKind, Selection, Symbol
 from vanrain.render import render
 from vanrain.seeds import SeedError, find_seeds, resolve_seeds
 from vanrain.selector import BFSSelector, SelectorConfig, Strategy
+from vanrain.text_seeds import seeds_from_text
 
 __all__ = [
     "DEFAULT_BUDGET",
@@ -45,6 +46,7 @@ __all__ = [
     "links",
     "open_repo",
     "repo_stats",
+    "seeds_from_text",
 ]
 
 DEFAULT_BUDGET = 2000

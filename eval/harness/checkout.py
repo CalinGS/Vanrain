@@ -10,7 +10,9 @@ git so they never show up in the agent's diff.
 
 from __future__ import annotations
 
+import shutil
 import subprocess
+import time
 from pathlib import Path
 
 from harness.tasks import Task
@@ -39,10 +41,21 @@ def checkout(task: Task, workdir: str | Path) -> Path:
             return dest
         raise RuntimeError(f"{dest} exists at another commit; remove it first")
     dest.mkdir(parents=True)
-    _git(["init", "-q"], dest)
-    _git(["remote", "add", "origin", url], dest)
-    _git(["fetch", "-q", "--depth", "1", "origin", task.base_commit], dest)
-    _git(["checkout", "-q", "FETCH_HEAD"], dest)
+    try:
+        _git(["init", "-q"], dest)
+        _git(["remote", "add", "origin", url], dest)
+        for attempt in range(4):  # GitHub fetches fail now and then
+            try:
+                _git(["fetch", "-q", "--depth", "1", "origin", task.base_commit], dest)
+                break
+            except subprocess.CalledProcessError:
+                if attempt == 3:
+                    raise
+                time.sleep(2 ** (attempt + 1))
+        _git(["checkout", "-q", "FETCH_HEAD"], dest)
+    except BaseException:
+        shutil.rmtree(dest, ignore_errors=True)  # never leave a half-made checkout
+        raise
     _git(["remote", "remove", "origin"], dest)
     exclude = dest / ".git" / "info" / "exclude"
     exclude.parent.mkdir(parents=True, exist_ok=True)

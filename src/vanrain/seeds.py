@@ -7,8 +7,8 @@ For now a seed is a symbol name. ``find_seeds`` tries, in order:
    ``total``), so ``rder`` never matches ``Order``.
 
 ``resolve_seed`` accepts the result only when it is a single symbol and raises
-``SeedError`` (with the candidates) otherwise. Open files, stack traces and
-keywords as seeds come later.
+``SeedError`` (with the candidates) otherwise. Seeds from free text (an issue,
+a traceback, plain words) are in ``vanrain.text_seeds``.
 """
 
 from __future__ import annotations
