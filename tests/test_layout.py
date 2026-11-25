@@ -124,3 +124,54 @@ def test_get_context_includes_callees_from_other_files(tmp_path):
 def test_layout_change_discards_the_cache():
     parsers = _default_parsers()
     assert _fingerprint(parsers, ["src"]) != _fingerprint(parsers)
+
+
+# --- imports Python finds from the nearest folder that is not a package -----
+
+
+def write(root, files):
+    for rel, text in files.items():
+        path = root / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+
+
+@pytest.fixture
+def nested_edges(tmp_path):
+    write(
+        tmp_path,
+        {
+            # tests/ is not a package: pytest and scripts import siblings by name
+            "tests/helpers_mod.py": "def make():\n    pass\n",
+            "tests/test_a.py": "from helpers_mod import make\n\n\ndef test_a():\n    make()\n",
+            "tests/test_b.py": "import helpers_mod\n\n\ndef test_b():\n    helpers_mod.make()\n",
+            # a project nested in the repository imports its own package by name
+            "examples/proj/shop/__init__.py": "from shop.models import Order\n",
+            "examples/proj/shop/models.py": "class Order:\n    pass\n",
+            "examples/proj/shop/checkout.py": (
+                "from shop import Order\n\n\ndef go():\n    return Order()\n"
+            ),
+            # a real top-level package still wins
+            "util.py": "def tool():\n    pass\n",
+            "scripts/util.py": "def tool():\n    pass\n",
+            "scripts/run.py": "from util import tool\n\n\ndef main():\n    tool()\n",
+        },
+    )
+    return {(e.src, e.kind, e.dst) for e in resolve(parse_repo(tmp_path))}
+
+
+def test_sibling_imports_in_a_folder_that_is_not_a_package(nested_edges):
+    assert ("tests.test_a.test_a", EdgeKind.CALLS, "tests.helpers_mod.make") in nested_edges
+    assert ("tests.test_b.test_b", EdgeKind.CALLS, "tests.helpers_mod.make") in nested_edges
+    assert ("tests.test_a", EdgeKind.IMPORTS, "tests.helpers_mod.make") in nested_edges
+
+
+def test_imports_inside_a_nested_project(nested_edges):
+    base = "examples.proj.shop"
+    assert (f"{base}.checkout.go", EdgeKind.CALLS, f"{base}.models.Order") in nested_edges
+    assert (base, EdgeKind.IMPORTS, f"{base}.models.Order") in nested_edges
+
+
+def test_an_import_that_resolves_from_the_root_is_not_retried(nested_edges):
+    assert ("scripts.run.main", EdgeKind.CALLS, "util.tool") in nested_edges
+    assert ("scripts.run.main", EdgeKind.CALLS, "scripts.util.tool") not in nested_edges
