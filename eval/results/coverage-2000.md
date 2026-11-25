@@ -51,3 +51,34 @@ separate venv).
 3. File-level coverage is a coarse check: Aider's map lists many files with a
    few lines each, Vanrain fewer files in more depth. Only the agent runs show
    which of the two helps more.
+
+## Update: seeds from text (gate 1, same day)
+
+`vanrain.text_seeds.seeds_from_text` replaces the harness's name lookup for
+the Vanrain conditions. It drops foreign prefixes (`xr.`, `self.`) only when
+what is left is specific, skips builtins, common names and top-level packages,
+searches the source for names that are not symbols (config options, constants),
+falls back to plain words matched against symbol names, and scores test code
+and whole modules lower.
+
+Tuned only on 38 other Lite tasks from the same repos (`eval/tasks/dev.json`),
+then run once on the pilot. Aider's row is unchanged (same input as before).
+
+| | Tuning set (38) | Pilot (25, held out) |
+|---|---|---|
+| Vanrain, old seeding | 20 (10 empty) | 12 (5 empty) |
+| Vanrain, text seeds | 28 (0 empty) | **14** (0 empty) |
+| Aider repo map | not run | 12 |
+
+- On the pilot, Vanrain and Aider both hit 9 tasks; either one hits 17.
+- New hits: requests-2317, seaborn-3190, flask-4045, pytest-5692. Lost:
+  requests-2674 and xarray-4493, where the new seeds (exception classes,
+  `Dataset`/`DataArray`) led the budget away from the fixed file.
+- **Gate 1 is not passed by the bar set beforehand** (16 or more of 25). The
+  gain on held-out tasks (+2) is much smaller than on the tuning set (+8),
+  which says some of the tuning gain was fitted to those repos (mostly pytest
+  and sphinx). Caveat: I had seen the pilot issues' names during the first
+  check, so the pilot is not perfectly blind.
+- Side finding: in old pytest checkouts (`src/pytest.py` next to
+  `src/_pytest/`), module ids keep the `src.` prefix, because the source-root
+  rule needs `src/` to hold no source files directly.
