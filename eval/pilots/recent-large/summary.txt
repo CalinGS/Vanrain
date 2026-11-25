@@ -1,0 +1,24 @@
+total runs 54 cost 35.67
+sympy {'none': (17, 14, 12.18, 19535, 202), 'vanrain': (17, 13, 11.62, 17954, 185)}
+astropy {'none': (10, 9, 5.89, 9416, 107), 'vanrain': (10, 10, 5.98, 8902, 97)}
+all {'none': (27, 23, 18.07, 28951, 308), 'vanrain': (27, 23, 17.6, 26855, 282)}
+seeded {'none': (24, 20, 16.61, 26590, 280), 'vanrain': (24, 20, 16.14, 24491, 254)}
+seeded excl 30999 {'none': (22, 20, 12.19, 19300, 221), 'vanrain': (22, 20, 12.29, 17979, 200)}
+task ctx  none_cost van_cost none_tok van_tok none_calls van_calls solved_none solved_van
+astropy__astropy-19895 yes 0.5 0.48 801 657 9.2 7.5 2/2 2/2
+astropy__astropy-20173 yes 0.61 0.61 1107 1014 12.5 11.0 2/2 2/2
+astropy__astropy-20489 yes 0.45 0.46 630 608 7.5 7.0 2/2 2/2
+astropy__astropy-20664 yes 0.76 0.72 1182 1001 13.0 10.5 2/2 2/2
+astropy__astropy-20704 yes 0.63 0.72 988 1172 11.2 12.5 1/2 2/2
+sympy__sympy-30335 yes 0.66 0.62 1232 1085 14.0 12.0 2/2 1/2
+sympy__sympy-30507 yes 0.56 0.56 899 837 10.0 9.2 2/2 2/2
+sympy__sympy-30568 no 0.5 0.49 788 793 9.5 9.5 1/1 1/1
+sympy__sympy-30804 no 0.55 0.54 956 955 11.0 11.0 1/1 1/1
+sympy__sympy-30884 yes 0.46 0.48 665 651 8.0 7.5 2/2 2/2
+sympy__sympy-30913 no 0.41 0.42 616 616 7.5 7.5 1/1 1/1
+sympy__sympy-30999 yes 2.21 1.93 3645 3256 29.8 27.2 0/2 0/2
+sympy__sympy-31096 yes 0.4 0.44 538 562 6.5 6.5 2/2 2/2
+sympy__sympy-31130 yes 0.51 0.53 721 666 8.5 7.5 2/2 2/2
+sympy__sympy-31272 yes 0.55 0.52 887 736 10.0 8.5 1/2 1/2
+seeded tasks 12 median tok change -8.0 mean -6.5 median cost change -1.1
+rep noise |r2/r1-1| tokens median 10.2 max 104.1 n 24
