@@ -232,3 +232,4 @@ __marimo__/
 eval/data/
 eval/work/
 eval/runs/
+eval/.venv-aider/
