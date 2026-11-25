@@ -7,8 +7,11 @@ then answers one question: given a target and a token budget, which code should 
 agent see, and at what level of detail? Close neighbours get full source, further
 ones get signatures only, and the rest is left out.
 
-> **Status:** pre-alpha. Milestones 0 to 5 (setup, data model, Python parser and
-> resolver, cached code graph, BFS selector and markdown renderer, CLI) are done.
+> **Status: archived.** Evaluation found no clear benefit: in agent pilots on
+> recent issues, adding a Vanrain context did not change how many tasks were
+> solved and cut tokens by only 5 to 7%, within run-to-run noise. The code and
+> the evaluation tools are kept for reference. See
+> [eval/FINDINGS.md](eval/FINDINGS.md) for the results and verdict.
 
 ## Install
 
@@ -87,7 +90,7 @@ src/vanrain/
   render.py         Selection -> text for the LLM
   api.py            public Python API (what the CLI calls)
   cli.py            command-line interface (thin, no logic)
-  mcp_server.py     MCP server (later)
+  mcp_server.py     MCP server (stub, never built)
 tests/
   fixtures/tiny_repo/   hand-made repo whose correct graph is known
 eval/                   benchmark, never shipped in the package
@@ -103,4 +106,4 @@ pytest
 
 ## License
 
-MIT
+MIT, see [LICENSE](LICENSE).

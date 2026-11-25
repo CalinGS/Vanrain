@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
-authors = [{ name = "The Vanrain authors" }]
+authors = [{ name = "Calin Stelea" }]
 keywords = ["code-graph", "llm", "context", "coding-agents", "mcp"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
