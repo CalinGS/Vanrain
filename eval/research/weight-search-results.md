@@ -1,6 +1,6 @@
 # Learned edge weights, first try (2026-11-25)
 
-Script: `/mnt/project-files/Vanrain/tools/weight_search.py`. 324 single-function commits
+Script: `eval/research/tools/weight_search.py`. 324 single-function commits
 (click 85, flask 49, httpx 78, requests 112). Ranking = Dijkstra with a cost per
 (edge kind, direction), divided by edge confidence. Selection = signatures first until
 the budget is spent. Score = share of needed symbols visible. Random search, 1,500 trials,

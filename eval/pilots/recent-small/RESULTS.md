@@ -2,7 +2,7 @@
 
 Agent: Claude Code cloud sessions (Opus 5.5, medium effort), one session per (task, condition), one run each.
 Conditions: `none` (issue only) and `vanrain_sig_first` (issue + Vanrain context, 2,000 tokens, issue-text seeds from Gate 1).
-Aider's repo map was not run: its maps can't be built in the cloud (blocked download); run it on Calin's PC later.
+Aider's repo map was not run: its maps can't be built in the cloud (blocked download); run it on a local machine later.
 
 ## Task set and contamination check
 18 bug fixes from pytest (6), pylint (11) and xarray (1). Every fix commit is dated 2026-07-23 or later

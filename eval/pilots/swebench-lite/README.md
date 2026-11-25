@@ -11,7 +11,7 @@
 
 ## Inputs prepared
 - `contexts/<id>.vanrain_sig_first.md` for all 25 pilot tasks (2,000 tokens; 5 tasks empty: no seed).
-- Aider maps NOT built: the cloud blocks tiktoken's download host. Build them on Calin's PC
+- Aider maps NOT built: the cloud blocks tiktoken's download host. Build them on a local machine
   (aider already works there) or allow openaipublic.blob.core.windows.net.
 
 ## Trial: pallets__flask-4992, Opus 5.5, cloud thread sessions

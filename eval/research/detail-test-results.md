@@ -5,7 +5,7 @@ showing whole functions only, or signatures only?
 
 ## Setup
 
-- Script: `/mnt/project-files/Vanrain/tools/detail_test.py` (offline, no LLM). Uses
+- Script: `eval/research/tools/detail_test.py` (offline, no LLM). Uses
   Vanrain milestone 3 (`index()` + `CodeGraph`) unchanged; nothing in the repo was modified.
 - Tasks: 145 real commits from requests, click, httpx and flask that changed exactly one
   function in one file and added 1–40 lines.
