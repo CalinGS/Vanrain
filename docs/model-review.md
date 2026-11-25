@@ -51,3 +51,27 @@ from the draft in the plan and why. The conventions themselves are in the
 * **Token counts live on `Symbol`**, which ties the graph cache to the token
   estimator. If the tokenizer changes, the cache must be rebuilt. Acceptable for
   v0.1; revisit when a real tokenizer arrives.
+
+## Milestone 2 additions
+
+The parser and resolver needed two things the milestone 1 schema could not
+carry. Both are additive, with defaults, so existing code and tests are
+unchanged.
+
+1. **`Binding(scope, name, target)` and `ParseResult.bindings`.** A reference
+   like `util.round_money` can only be resolved if the resolver knows what
+   `util` means in that file. Bindings record what each import binds, with
+   relative imports already made absolute (`from .models import Order` in
+   `pkg/__init__.py` is `Binding("pkg", "Order", "pkg.models.Order")`). The
+   scope is the enclosing symbol, so imports inside functions work too. Star
+   imports bind `"*"`. This is also how re-exports are followed.
+2. **`Reference.inferred: bool = False`.** When the parser rewrites a
+   receiver as its guessed type (`order.add()` after `order = Order()` becomes
+   `"Order.add"`), it says so. The resolver only accepts such a name if it goes
+   through a class, and gives the edge a confidence below 1.0.
+
+Confidence levels used by the resolver: 1.0 for exact resolutions, 0.9 for
+`self.m` (a subclass may override `m`), 0.7 for inferred receivers.
+Self-loops (a function calling itself) are dropped. The comment on
+`ParseResult.edges` now says CONTAINS only: INHERITS needs the base class
+resolved, so it comes from references like everything else.

@@ -123,6 +123,27 @@ class Reference:
     name: str  # dotted text as written, e.g. "util.round_money" or "self.add"
     kind: EdgeKind
     line: int
+    # True when the parser replaced the receiver with its guessed type:
+    # ``order.add()`` after ``order = Order()`` becomes ``"Order.add"``. The
+    # resolver only accepts such a name if its prefix is a class, and gives the
+    # edge a confidence below 1.0.
+    inferred: bool = False
+
+
+@dataclass(frozen=True)
+class Binding:
+    """A name an import statement binds in a scope.
+
+    ``from .models import Order`` in ``pkg/__init__.py`` is
+    ``Binding("pkg", "Order", "pkg.models.Order")``; ``import a.b`` binds
+    ``a`` to ``"a"``; ``from m import *`` binds ``"*"`` to ``"m"``. The
+    target is an absolute dotted name that may not be a symbol yet (it can
+    be a re-export); the resolver follows it.
+    """
+
+    scope: str  # id of the symbol whose body holds the import
+    name: str  # local name
+    target: str  # absolute dotted name it refers to
 
 
 @dataclass(frozen=True)
@@ -133,8 +154,9 @@ class ParseResult:
     module: str  # module id, e.g. "pkg.mod"
     symbols: tuple[Symbol, ...] = ()
     references: tuple[Reference, ...] = ()
-    # CONTAINS and INHERITS edges known without resolving anything else.
+    # Edges known without resolving anything else (CONTAINS).
     edges: tuple[Edge, ...] = ()
+    bindings: tuple[Binding, ...] = ()
 
 
 @dataclass(frozen=True)
