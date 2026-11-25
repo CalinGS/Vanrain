@@ -7,7 +7,8 @@ then answers one question: given a target and a token budget, which code should 
 agent see, and at what level of detail? Close neighbours get full source, further
 ones get signatures only, and the rest is left out.
 
-> **Status:** pre-alpha. Milestones 0 (setup) and 1 (data model) are done; nothing
+> **Status:** pre-alpha. Milestones 0 to 3 (setup, data model, Python parser and
+> resolver, cached code graph) are done; there is no CLI or selector yet, so nothing
 > is usable yet.
 
 ## Layout

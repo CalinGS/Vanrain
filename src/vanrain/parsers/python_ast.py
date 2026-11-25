@@ -15,7 +15,8 @@ normalisations the resolver relies on:
 * the first parameter of a method (``self``, ``cls``, ``me``...) is written
   ``self``, and ``super().m`` is written ``super().m``;
 * when the receiver is a local variable whose type the parser can guess (an
-  annotation, ``x = Cls()``, iterating over a ``list[Cls]``, a ``self.attr``
+  annotation, ``x = Cls()``, ``with Cls() as x``, iterating over a
+  ``list[Cls]``, a ``self.attr``
   annotated or assigned in the class), the receiver is replaced by that type
   and the reference is marked ``inferred``: ``order.add`` becomes
   ``Order.add``.
@@ -400,7 +401,10 @@ class _FileParser:
                 self.expr(item.context_expr, scope)
                 if item.optional_vars is not None:
                     self.target(item.optional_vars, scope)
-                    self.bind_type(item.optional_vars, None, scope)
+                    # Guess that __enter__ returns the manager itself, as it
+                    # usually does (``with Session() as s``). Tuples get no type.
+                    t = self.infer(item.context_expr, scope)
+                    self.bind_type(item.optional_vars, t, scope)
             self.stmts(node.body, scope)
         else:
             self.generic(node, scope)
