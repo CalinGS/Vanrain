@@ -148,6 +148,7 @@ def test_gold_file_coverage():
             "diff --git a/shop/util.py b/shop/util.py\n"
     assert metrics.patch_files(patch) == ["shop/pricing.py", "shop/util.py"]
     assert metrics.gold_file_coverage("## shop/pricing.py\n", patch) == 0.5
+    assert metrics.gold_file_coverage("shop\\util.py:\n", patch) == 0.5
     assert metrics.gold_file_coverage("x", "") is None
 
 

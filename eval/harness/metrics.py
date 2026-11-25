@@ -204,4 +204,5 @@ def gold_file_coverage(context: str, gold_patch: str) -> float | None:
     files = patch_files(gold_patch)
     if not files:
         return None
+    context = context.replace("\\", "/")  # Aider prints OS paths (backslashes on Windows)
     return sum(1 for f in files if f in context) / len(files)

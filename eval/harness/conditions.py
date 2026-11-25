@@ -87,13 +87,16 @@ def _aider_map(repo: Path, issue: str, budget: int) -> Injected:
         raise RuntimeError("aider_map needs aider-chat installed (see eval/requirements.txt)") from e
 
     mentions: Mentions = extract(issue)
+    # Aider matches bare identifiers against its tags (it splits chat text on
+    # non-word characters itself), so dotted names go in as their parts.
+    idents = {part for name in mentions.identifiers for part in name.split(".")}
     files = [str(p) for p in repo.rglob("*.py") if ".git" not in p.parts]
     t0 = time.perf_counter()
     rm = RepoMap(map_tokens=budget, root=str(repo), main_model=Model("gpt-4o"),
                  io=InputOutput(yes=True), refresh="always")
     body = rm.get_repo_map(chat_files=[], other_files=files,
                            mentioned_fnames=set(mentions.paths),
-                           mentioned_idents=set(mentions.identifiers)) or ""
+                           mentioned_idents=idents) or ""
     t1 = time.perf_counter()
     text = wrap(body)
     return Injected("aider_map", text, count_tokens(text),
