@@ -40,7 +40,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from vanrain.model import Binding, Edge, EdgeKind, NodeKind, ParseResult, Reference, Symbol
-from vanrain.parsers.base import Parser, iter_source_files
+from vanrain.parsers.base import Parser, iter_source_files, source_roots_by_parser
 
 #: Bump when the layout of the cache file changes.
 CACHE_FORMAT = 1
@@ -253,13 +253,17 @@ def index(
         for ext in p.extensions:
             by_ext.setdefault(ext, p)
     cache_path = None if cache is None else root / cache
-    fingerprint = _fingerprint(parsers)
+    sources = iter_source_files(root, by_ext)
+    roots = source_roots_by_parser(by_ext, sources)
+    # Module ids depend on the source roots, so a change of layout (a new
+    # src/ directory, say) must discard every cached parse.
+    fingerprint = _fingerprint(parsers, sorted({r for rs in roots.values() for r in rs}))
     old = _read_cache(cache_path, fingerprint) if cache_path else None
     old_files: dict = old["files"] if old else {}
 
     run = IndexRun(CodeGraph())
     files: dict[str, dict] = {}
-    for rel in iter_source_files(root, by_ext):
+    for rel in sources:
         path = root / rel
         st = path.stat()
         entry = old_files.get(rel)
@@ -272,7 +276,8 @@ def index(
             files[rel] = {**entry, "size": st.st_size, "mtime_ns": st.st_mtime_ns}
             run.reused.append(rel)
             continue
-        result = by_ext[path.suffix].parse_file(root, rel)
+        parser = by_ext[path.suffix]
+        result = parser.parse_file(root, rel, roots[id(parser)])
         files[rel] = {
             "mtime_ns": st.st_mtime_ns,
             "size": st.st_size,
@@ -307,12 +312,13 @@ def _default_parsers() -> list[Parser]:
     return [PythonParser()]
 
 
-def _fingerprint(parsers: Iterable[Parser]) -> str:
+def _fingerprint(parsers: Iterable[Parser], roots: Iterable[str] = ()) -> str:
     """Hash of everything that decides what the cached data looks like."""
     import vanrain.model
     import vanrain.resolver
 
     h = hashlib.sha1(f"{CACHE_FORMAT}".encode())
+    h.update("\n".join(roots).encode())
     modules = [vanrain.model, vanrain.resolver, sys.modules[__name__]]
     modules += [sys.modules[type(p).__module__] for p in parsers]
     for m in modules:

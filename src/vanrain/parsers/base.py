@@ -27,21 +27,33 @@ class Parser(ABC):
     #: File suffixes this parser handles, e.g. ``(".py",)``.
     extensions: ClassVar[tuple[str, ...]] = ()
 
-    @abstractmethod
-    def module_id(self, path: str) -> str:
-        """Module id for a POSIX path relative to the repository root."""
+    def source_roots(self, files: Iterable[str]) -> tuple[str, ...]:
+        """Directories module ids are relative to, besides the repository root.
+
+        ``files`` are all the repo-relative paths this parser will see. The
+        default is none: every module id starts at the repository root.
+        """
+        return ()
 
     @abstractmethod
-    def parse(self, path: str, source: str) -> ParseResult:
-        """Parse ``source``, the text of the file at ``path``.
+    def module_id(self, path: str, roots: Iterable[str] = ()) -> str:
+        """Module id for a POSIX path relative to the repository root.
 
-        ``path`` is a POSIX path relative to the repository root. Must not
-        raise on invalid source: return what can be recovered instead.
+        ``roots`` are the ``source_roots`` of the repository.
         """
 
-    def parse_file(self, root: Path, path: str) -> ParseResult:
+    @abstractmethod
+    def parse(self, path: str, source: str, roots: Iterable[str] = ()) -> ParseResult:
+        """Parse ``source``, the text of the file at ``path``.
+
+        ``path`` is a POSIX path relative to the repository root, ``roots``
+        the repository's ``source_roots``. Must not raise on invalid source:
+        return what can be recovered instead.
+        """
+
+    def parse_file(self, root: Path, path: str, roots: Iterable[str] = ()) -> ParseResult:
         text = (Path(root) / path).read_text(encoding="utf-8", errors="replace")
-        return self.parse(path, text)
+        return self.parse(path, text, roots)
 
 
 def iter_source_files(root: Path, extensions: Iterable[str]) -> list[str]:
@@ -68,7 +80,22 @@ def parse_repo(root: Path, parsers: Iterable[Parser] | None = None) -> list[Pars
     for parser in parsers:
         for ext in parser.extensions:
             by_ext.setdefault(ext, parser)
-    return [
-        by_ext[Path(rel).suffix].parse_file(root, rel)
-        for rel in iter_source_files(root, by_ext)
-    ]
+    files = iter_source_files(root, by_ext)
+    roots = source_roots_by_parser(by_ext, files)
+    results = []
+    for rel in files:
+        parser = by_ext[Path(rel).suffix]
+        results.append(parser.parse_file(root, rel, roots[id(parser)]))
+    return results
+
+
+def source_roots_by_parser(
+    by_ext: dict[str, Parser], files: Iterable[str]
+) -> dict[int, tuple[str, ...]]:
+    """``id(parser)`` -> that parser's ``source_roots`` over the files it handles."""
+    files = list(files)
+    out: dict[int, tuple[str, ...]] = {}
+    for parser in {id(p): p for p in by_ext.values()}.values():
+        mine = [f for f in files if by_ext.get(Path(f).suffix) is parser]
+        out[id(parser)] = parser.source_roots(mine)
+    return out

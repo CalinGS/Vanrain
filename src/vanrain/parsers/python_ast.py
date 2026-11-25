@@ -107,6 +107,15 @@ def _dotted(node: ast.AST) -> list[str] | None:
     return None
 
 
+def _is_overload(node: ast.AST) -> bool:
+    """Decorated with ``overload``, ``typing.overload`` or the like."""
+    for d in node.decorator_list:
+        parts = _dotted(d)
+        if parts and parts[-1] == "overload":
+            return True
+    return False
+
+
 def _is_super_call(node: ast.AST) -> bool:
     return (
         isinstance(node, ast.Call)
@@ -278,6 +287,9 @@ class _FileParser:
         self.edges: list[Edge] = []
         self.bindings: list[Binding] = []
         self._counts: dict[str, dict[str, int]] = {}
+        # id -> (kind, parent, first line, last line, signatures) of pending
+        # ``@overload`` stubs.
+        self._overloads: dict[str, tuple[NodeKind, str, int, int, list[str]]] = {}
 
     # -- results -----------------------------------------------------------
 
@@ -308,31 +320,56 @@ class _FileParser:
     def run(self, tree: ast.Module) -> None:
         self.symbols.append(self.module_symbol(tree))
         self.stmts(tree.body, _Scope(self.module, NodeKind.MODULE))
+        self.flush_overloads()
 
     # -- symbols -----------------------------------------------------------
 
     def define(self, node: ast.AST, parent: str, kind: NodeKind) -> str:
+        """Add the symbol for ``node`` and return its id.
+
+        ``@overload`` stubs get no symbol of their own: they share the id of
+        the implementation that follows them, whose span grows to cover them.
+        Stubs with no implementation (``.pyi`` files) become one symbol when
+        the file is done, see ``flush_overloads``.
+        """
         counts = self._counts.setdefault(parent, {})
         n = counts.get(node.name, 0) + 1
-        counts[node.name] = n
         sid = f"{parent}.{node.name}" + (f"#{n}" if n > 1 else "")
         start = min([node.lineno] + [d.lineno for d in node.decorator_list])
         end = node.end_lineno or node.lineno
         sig = self.signature(node)
-        full = "\n".join(self.lines[start - 1 : end])
+        if isinstance(node, _FUNCS) and _is_overload(node):
+            stubs = self._overloads.setdefault(sid, (kind, parent, start, end, []))
+            self._overloads[sid] = (kind, parent, stubs[2], end, [*stubs[4], sig])
+            return sid
+        counts[node.name] = n
+        stubs = self._overloads.pop(sid, None)
+        if stubs is not None:
+            start = min(start, stubs[2])
+        self.add_symbol(sid, kind, parent, (start, end), sig)
+        return sid
+
+    def flush_overloads(self) -> None:
+        for sid, (kind, parent, start, end, sigs) in self._overloads.items():
+            self.add_symbol(sid, kind, parent, (start, end), "\n".join(sigs))
+        self._overloads.clear()
+
+    def add_symbol(
+        self, sid: str, kind: NodeKind, parent: str, span: tuple[int, int], sig: str
+    ) -> None:
+        full = "\n".join(self.lines[span[0] - 1 : span[1]])
         self.symbols.append(
             Symbol(
                 id=sid,
                 kind=kind,
                 file=self.path,
-                span=(start, end),
+                span=span,
                 signature=sig,
                 tokens_full=estimate_tokens(full),
                 tokens_sig=estimate_tokens(sig),
             )
         )
         self.edges.append(Edge(parent, sid, EdgeKind.CONTAINS))
-        return sid
 
     def signature(self, node: ast.AST) -> str:
         """Header from ``def``/``class`` to its colon, plus the docstring's first line."""
@@ -667,15 +704,56 @@ class PythonParser(Parser):
 
     extensions = (".py", ".pyi")
 
-    def module_id(self, path: str) -> str:
+    def source_roots(self, files: Iterable[str]) -> tuple[str, ...]:
+        """Directories that hold top-level packages: ``src/`` and ``lib/`` layouts.
+
+        A directory is a source root when it is not a package (no
+        ``__init__``), holds no Python file directly, holds at least one
+        package, and is either at the top of the repository or named ``src``
+        or ``lib`` (``packages/foo/src`` in a monorepo). Such a directory is
+        never on an import path, so module ids start below it:
+        ``src/vanrain/api.py`` is ``vanrain.api``. Directories like
+        ``tests/`` keep their name, as they hold files of their own.
+        """
+        files = list(files)
+        dirs_with_files: set[str] = set()
+        packages: set[str] = set()
+        for f in files:
+            d, _, name = f.rpartition("/")
+            dirs_with_files.add(d)
+            if name in ("__init__.py", "__init__.pyi"):
+                packages.add(d)
+        candidates: set[str] = set()
+        for pkg in packages:
+            parent = pkg.rpartition("/")[0]
+            if parent:
+                candidates.add(parent)
+        roots = []
+        for d in sorted(candidates):
+            parts = d.split("/")
+            if d in packages or d in dirs_with_files:
+                continue
+            if len(parts) > 1 and parts[-1] not in ("src", "lib"):
+                continue
+            ancestors = ("/".join(parts[:i]) for i in range(1, len(parts)))
+            if any(a in packages for a in ancestors):
+                continue
+            roots.append(d)
+        return tuple(roots)
+
+    def module_id(self, path: str, roots: Iterable[str] = ()) -> str:
+        for r in sorted(roots, key=len, reverse=True):
+            if path.startswith(r + "/"):
+                path = path[len(r) + 1 :]
+                break
         stem = path.rsplit(".", 1)[0] if path.endswith(self.extensions) else path
         parts = [p for p in stem.split("/") if p]
         if parts and parts[-1] == "__init__":
             parts.pop()
         return ".".join(parts)
 
-    def parse(self, path: str, source: str) -> ParseResult:
-        module = self.module_id(path)
+    def parse(self, path: str, source: str, roots: Iterable[str] = ()) -> ParseResult:
+        module = self.module_id(path, roots)
         fp = _FileParser(path, module, source)
         try:
             tree = ast.parse(source, filename=path)

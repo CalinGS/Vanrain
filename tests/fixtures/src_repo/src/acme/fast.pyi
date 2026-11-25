@@ -1,0 +1,6 @@
+from typing import overload
+
+@overload
+def speed(x: int) -> int: ...
+@overload
+def speed(x: float) -> float: ...
