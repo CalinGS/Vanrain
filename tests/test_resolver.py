@@ -186,3 +186,36 @@ def test_edges_only_join_known_symbols():
     for e in resolve(results):
         assert isinstance(e, Edge)
         assert e.src in known and e.dst in known
+
+
+def test_with_target_takes_the_context_manager_type():
+    """``with Session() as s: s.request()`` calls ``Session.request``.
+
+    Guessed, since ``__enter__`` may return something else, so the edge is
+    heuristic. Other targets (``open(...)``, tuples) still give no edge.
+    """
+    edges = edges_of(
+        {
+            "m.py": """
+                class Session:
+                    def request(self): pass
+
+                def f():
+                    with Session() as s, open("x") as fh:
+                        s.request()
+                        fh.read()
+
+                async def g():
+                    async with Session() as s:
+                        s.request()
+
+                def h():
+                    with Session() as (a, b):
+                        a.request()
+            """
+        }
+    )
+    calls = {(s, d, c) for s, k, d, c in edges if k is EdgeKind.CALLS}
+    assert ("m.f", "m.Session.request", INFERRED_CONFIDENCE) in calls
+    assert ("m.g", "m.Session.request", INFERRED_CONFIDENCE) in calls
+    assert not any(s == "m.h" and d == "m.Session.request" for s, d, _ in calls)
