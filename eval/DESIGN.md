@@ -140,8 +140,11 @@ at $4, $0.20 and $20.
 | Opus 5.5 | ~$0.80 | ~$80 | ~$2,900 |
 
 Treat these as within a factor of 2. Failed runs that use all 50 steps cost
-several times more than the average run. A 4,000-token budget adds about 50%
-(two more conditions). The real per-run figure comes from the first 10 pilot
+several times more than the average run. A 4,000-token budget adds about 75%
+(three more conditions: both Vanrain strategies and Aider at 4,000), or 50% if
+only `vanrain_sig_first` and `aider_map` also run at 4,000. The extra 2,000
+tokens per call cost almost nothing on their own (about $0.01 a run on Sonnet
+5.5, since they are cache reads after the first call). The real per-run figure comes from the first 10 pilot
 runs, and the full-run budget should be set from that.
 
 Other costs: free, but heavy. SWE-bench Docker images take tens of GB of disk
