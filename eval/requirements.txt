@@ -1,0 +1,12 @@
+# Optional dependencies for the benchmark. Not needed by vanrain itself.
+# Pin exact versions in the run manifest when the first real run happens.
+
+datasets          # export SWE-bench Lite to JSONL once (harness.tasks)
+swebench          # official grading harness (needs Docker; WSL2 on Windows)
+tiktoken          # fixed tokenizer for cross-model token counts (harness.metrics)
+
+# Baseline condition, install in a separate venv: it pulls many dependencies.
+# aider-chat
+
+# Agent: chosen after DESIGN.md section 4 is approved, e.g.
+# mini-swe-agent
