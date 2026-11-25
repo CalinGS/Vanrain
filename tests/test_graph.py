@@ -250,13 +250,17 @@ def test_custom_cache_path(repo, tmp_path):
 
 def test_second_run_is_much_faster(repo):
     # Enough files that parsing dominates, so the comparison is not noise.
-    for i in range(40):
+    for i in range(120):
         shutil.copy(repo / "shop" / "checkout.py", repo / "shop" / f"copy{i}.py")
     t0 = time.perf_counter()
     index(repo)
     cold = time.perf_counter() - t0
-    t0 = time.perf_counter()
-    run = index(repo)
-    warm = time.perf_counter() - t0
-    assert run.parsed == []
+    # Best of three warm runs, so one slow tick on a shared CI runner does not
+    # decide the result.
+    warm = float("inf")
+    for _ in range(3):
+        t0 = time.perf_counter()
+        run = index(repo)
+        warm = min(warm, time.perf_counter() - t0)
+        assert run.parsed == []
     assert warm < cold / 3, (cold, warm)

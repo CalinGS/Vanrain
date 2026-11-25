@@ -225,9 +225,6 @@ __marimo__/
 # Vanrain index cache
 .vanrain/
 
-# Vanrain index cache
-.vanrain/
-
 # Benchmark data and checkouts (eval/DESIGN.md)
 eval/data/
 eval/work/
